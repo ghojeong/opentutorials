@@ -2,10 +2,13 @@ const path = require("path");
 
 module.exports = {
     mode: "production",
-    entry: "./src/index.js",
+    entry: {
+        index: "./src/entry/index.js",
+        about: "./src/entry/about.js"
+    },
     output: {
         path: path.resolve(__dirname, "./src/dist"),
-        filename: "index_bundle.js",
+        filename: "[name]_bundle.js",
     },
     module: {
         rules: [

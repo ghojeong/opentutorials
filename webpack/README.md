@@ -1,5 +1,13 @@
 # [Webpack](https://opentutorials.org/module/4566)
 
+```sh
+# npx 로 터미널에서 웹팩 번들링하는 방법
+npx webpack --entry ./js/index.js --output-filename index_bundle.js
+
+# config 파일을 이용해 웹팩 번들링하는 방법
+npx webpack --config webpack.config.js
+```
+
 ## 토픽 목록
 
 - 웹팩 이전의 소개와 모듈 소개
